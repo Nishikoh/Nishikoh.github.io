@@ -18,7 +18,7 @@ permissions:
 jobs:
   build:
     runs-on: ubuntu-22.04
-
+    timeout-minutes: 3
     steps:
       - uses: actions/checkout@v3
         with:
@@ -53,8 +53,3 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@v1
 
-      # - name: Deploy
-      #   uses: peaceiris/actions-gh-pages@v3
-      #   with:
-      #     github_token: ${{ secrets.GITHUB_TOKEN }}
-      #     publish_dir: ./site
