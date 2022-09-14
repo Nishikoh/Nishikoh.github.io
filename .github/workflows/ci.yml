@@ -53,3 +53,6 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@v1
 
+      - uses: geekyeggo/delete-artifact@v1
+        with:
+          name: github-pages
