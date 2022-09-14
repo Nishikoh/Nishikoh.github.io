@@ -38,7 +38,7 @@ theme:
   font:
     text: Zen Maru Gothic
     code: Roboto Mono
-  favicon: assets/favicon.png
+  favicon: fontawesome/brands/github
   icon:
     logo: logo
 plugins:

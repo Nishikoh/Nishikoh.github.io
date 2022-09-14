@@ -3,6 +3,7 @@ tags:
   - HTML5
   - JavaScript
   - CSS
+  - Python
 ---
 # Welcome to MkDocs
 
