@@ -4,7 +4,7 @@ on:
   push:
     branches:
       - master
-    workflow_dispatch:
+  workflow_dispatch:
 
 concurrency:
   group: "pages"
@@ -53,3 +53,6 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@v1
 
+      - uses: geekyeggo/delete-artifact@v1
+        with:
+          name: github-pages
