@@ -22,3 +22,17 @@ For full documentation visit [mkdocs.org](https://www.mkdocs.org).
     docs/
         index.md  # The documentation homepage.
         ...       # Other markdown pages, images and other files.
+
+```py
+a = 1
+print(1)
+```
+
+プログラミングを始めた。エラーが分からない。とりあえず本を読んだりインターネットで調べる
+
+```c
+#include <iostream>
+void main() {
+std::cout << "Hello world!" << std::endl;
+}
+```

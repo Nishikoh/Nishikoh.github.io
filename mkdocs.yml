@@ -1,5 +1,6 @@
 site_name: Nishikoh.io
 theme:
+  language: "ja"
   name: material
   features:
     - navigation.tabs
@@ -8,6 +9,8 @@ theme:
     - search.suggest
     - search.highlight
     - content.code.annotate
+    - navigation.instant
+
   palette:
     # Palette toggle for light mode
     - media: "(prefers-color-scheme: light)"
@@ -30,26 +33,34 @@ theme:
     - 404.html
 
   # Necessary for search to work properly
-  include_search_page: false
-  search_index_only: true
+  include_search_page: true
+  search_index_only: false
 
   # Default values, taken from mkdocs_theme.yml
-  language: ja
+  # extra:
+  #   search:
+  #     language: "ja"
   font:
     text: Zen Maru Gothic
     code: Roboto Mono
-  favicon: fontawesome/brands/github
   icon:
     logo: logo
 plugins:
   - monorepo
-  - search
+  - search:
+      lang:
+        - ja
+        - en
+  # 検索インデックスの単語区切り文字設定
+  # separator: '[\s\-\.]+'
   - tags
 extra:
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/Nishikoh
-
+  search:
+    language: "ja"
+    
 # https://squidfunk.github.io/mkdocs-material/reference/
 markdown_extensions:
   - admonition
