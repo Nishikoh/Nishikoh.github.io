@@ -48,7 +48,9 @@ theme:
 plugins:
   - monorepo
   - search:
-      lang: ja
+      lang:
+        - ja
+        - en
   # 検索インデックスの単語区切り文字設定
   # separator: '[\s\-\.]+'
   - tags
