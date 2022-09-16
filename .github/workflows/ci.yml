@@ -21,8 +21,19 @@ jobs:
     timeout-minutes: 3
     steps:
       - uses: actions/checkout@v3
-        with:
-          submodules: recursive
+      - name: ssh setting
+        env:
+          TOKEN: ${{ secrets.SSH_KEY }}
+        run: |
+            mkdir -p $HOME/.ssh/
+            echo -e "$TOKEN" > $HOME/.ssh/id_rsa
+            chmod 600 $HOME/.ssh/id_rsa
+      - name: Checkout 
+        shell: bash
+        run: |
+            git submodule sync --recursive
+            git submodule update --init --force --recursive
+            
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v2
