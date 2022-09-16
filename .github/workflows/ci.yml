@@ -30,10 +30,8 @@ jobs:
             chmod 600 $HOME/.ssh/id_rsa
       - name: Checkout 
         shell: bash
-        run: |
-            git submodule sync --recursive
-            git submodule update --init --force --recursive
-            
+        run: git submodule update --init --force --recursive
+
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v2
