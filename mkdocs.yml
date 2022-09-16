@@ -1,4 +1,6 @@
 site_name: Nishikoh.io
+site_author: Nishikoh
+docs_dir: blog
 theme:
   language: "ja"
   name: material
@@ -10,6 +12,7 @@ theme:
     - search.highlight
     - content.code.annotate
     - navigation.instant
+    - navigation.top
 
   palette:
     # Palette toggle for light mode
@@ -45,22 +48,28 @@ theme:
     code: Roboto Mono
   icon:
     logo: logo
+
 plugins:
   - monorepo
+  - git-revision-date-localized:
+      type: iso_datetime
   - search:
       lang:
         - ja
         - en
   # 検索インデックスの単語区切り文字設定
   # separator: '[\s\-\.]+'
-  - tags
+  - tags:
+      tags_file: tags.md
 extra:
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/Nishikoh
+    - icon: fontawesome/solid/blog
+      link: https://zenn.dev/nishikoh
   search:
     language: "ja"
-    
+
 # https://squidfunk.github.io/mkdocs-material/reference/
 markdown_extensions:
   - admonition
@@ -74,6 +83,7 @@ markdown_extensions:
   - md_in_html
   - pymdownx.highlight:
       anchor_linenums: true
+      linenums: true
   - pymdownx.inlinehilite
   - pymdownx.snippets
   - pymdownx.tabbed:
