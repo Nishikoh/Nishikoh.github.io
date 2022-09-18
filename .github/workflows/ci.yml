@@ -25,10 +25,10 @@ jobs:
         env:
           TOKEN: ${{ secrets.SSH_KEY }}
         run: |
-            mkdir -p $HOME/.ssh/
-            echo -e "$TOKEN" > $HOME/.ssh/id_rsa
-            chmod 600 $HOME/.ssh/id_rsa
-      - name: Checkout 
+          mkdir -p $HOME/.ssh/
+          echo -e "$TOKEN" > $HOME/.ssh/id_rsa
+          chmod 600 $HOME/.ssh/id_rsa
+      - name: Checkout
         shell: bash
         run: git submodule update --init --force --recursive
 
@@ -43,6 +43,9 @@ jobs:
 
       - name: Install dependencies
         run: pip install -r ./requirements.txt
+
+      - name: delete private
+        run: rm -rf blog/private
 
       - run: mkdocs build
       - name: Upload artifact
