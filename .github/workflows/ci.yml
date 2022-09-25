@@ -45,7 +45,7 @@ jobs:
         run: pip install -r ./requirements.txt
 
       - name: delete private
-        run: rm -rf blog/private
+        run: rm -rf blog/private blog/node_modules
 
       - run: mkdocs build
       - name: Upload artifact
