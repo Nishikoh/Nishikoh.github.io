@@ -11,7 +11,7 @@ theme:
     - search.suggest
     - search.highlight
     - content.code.annotate
-    - navigation.instant
+    # - navigation.instant # blogging と併用はできない
     - navigation.top
 
   palette:
@@ -59,6 +59,11 @@ plugins:
         - en
   # 検索インデックスの単語区切り文字設定
   # separator: '[\s\-\.]+'
+  - blogging:
+      locale: ja
+      # GLOBAL CATEGORY: configs for {{ blog_content }}
+      dirs:
+        - ./
   - tags:
       tags_file: tags.md
 extra:
