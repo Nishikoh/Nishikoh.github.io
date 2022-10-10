@@ -1,6 +1,8 @@
 site_name: Nishikoh.io
 site_author: Nishikoh
 docs_dir: blog
+site_url: https://nishikoh.github.io/
+
 theme:
   language: "ja"
   name: material
