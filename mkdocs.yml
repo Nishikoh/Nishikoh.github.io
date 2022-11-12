@@ -68,6 +68,13 @@ plugins:
         - ./
   - tags:
       tags_file: tags.md
+  - exclude:
+      glob:
+        - "slidev/*"
+        - "node_modules/*"
+        - "**/.git/*"
+        - "**/node_modules/*"
+
 extra:
   social:
     - icon: fontawesome/brands/github
