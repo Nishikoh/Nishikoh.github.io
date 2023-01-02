@@ -85,6 +85,7 @@ extra:
     language: "ja"
 
 # https://squidfunk.github.io/mkdocs-material/reference/
+# https://facelessuser.github.io/pymdown-extensions/extensions/arithmatex/
 markdown_extensions:
   - admonition
   - pymdownx.details
