@@ -100,6 +100,7 @@ markdown_extensions:
       linenums: true
   - pymdownx.inlinehilite
   - pymdownx.snippets
+  - pymdownx.magiclink
   - pymdownx.tabbed:
       alternate_style: true
   - tables
