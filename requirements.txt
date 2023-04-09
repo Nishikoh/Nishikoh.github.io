@@ -3,4 +3,4 @@ mkdocs-monorepo-plugin
 mkdocs-git-revision-date-localized-plugin
 mkdocs-blogging-plugin
 mkdocs-exclude
-neoteroi-mkdos
+neoteroi-mkdocs
