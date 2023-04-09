@@ -84,6 +84,9 @@ extra:
   search:
     language: "ja"
 
+extra_css:
+  - https://www.neoteroi.dev/mkdocs-plugins/css/neoteroi.css # https://github.com/Neoteroi/mkdocs-plugins/issues/30
+
 # https://squidfunk.github.io/mkdocs-material/reference/
 # https://facelessuser.github.io/pymdown-extensions/extensions/arithmatex/
 markdown_extensions:
@@ -114,3 +117,4 @@ markdown_extensions:
       custom_checkbox: true
   - toc:
       permalink: true
+  - neoteroi.timeline
