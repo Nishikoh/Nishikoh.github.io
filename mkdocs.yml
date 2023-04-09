@@ -66,6 +66,14 @@ plugins:
       # GLOBAL CATEGORY: configs for {{ blog_content }}
       dirs:
         - ./
+      features:
+        tags: {}
+      sort: 
+        from: new        # Sort from new to old, default
+        # or old         # Sort from old to new
+        by: creation     # Sort by the first commit time, default
+        # or revision    # Sort by the latest commit time
+      full_content: false # Use the full content for blog description
   - tags:
       tags_file: tags.md
   - exclude:
