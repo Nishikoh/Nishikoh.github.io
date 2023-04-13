@@ -9,12 +9,13 @@ theme:
   features:
     - navigation.tabs
     - navigation.tabs.sticky
-    - navigation.tabs.sticky
     - search.suggest
     - search.highlight
     - content.code.annotate
     # - navigation.instant # blogging と併用はできない
     - navigation.top
+    - navigation.tracking
+    - toc.follow
 
   palette:
     # Palette toggle for light mode
@@ -89,6 +90,10 @@ extra:
       link: https://github.com/Nishikoh
     - icon: fontawesome/solid/blog
       link: https://zenn.dev/nishikoh
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/koki-nishihara/
+  generator: false
+
   search:
     language: "ja"
 
