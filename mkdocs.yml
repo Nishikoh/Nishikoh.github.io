@@ -12,7 +12,7 @@ theme:
     - search.suggest
     - search.highlight
     - content.code.annotate
-    # - navigation.instant # blogging と併用はできない
+    - navigation.instant # blogging paging と併用はできない
     - navigation.top
     - navigation.tracking
     - toc.follow
@@ -67,6 +67,7 @@ plugins:
       # GLOBAL CATEGORY: configs for {{ blog_content }}
       dirs:
         - ./
+      size: 1000 # 大きな値にしないと2回繰り返して表示される
       features:
         tags: {}
       sort: 
@@ -75,6 +76,10 @@ plugins:
         by: creation     # Sort by the first commit time, default
         # or revision    # Sort by the latest commit time
       full_content: false # Use the full content for blog description
+      paging: false # trueにするとnavigation.instantと競合する
+      show_total: true
+      theme:
+        name: card
   - tags:
       tags_file: tags.md
   - exclude:
@@ -83,6 +88,12 @@ plugins:
         - "node_modules/*"
         - "**/.git/*"
         - "**/node_modules/*"
+        # - "private/*"
+  - macros:
+      render_by_default: true
+      on_error_fail: true
+      verbose: true
+
 
 extra:
   social:
@@ -131,3 +142,5 @@ markdown_extensions:
   - toc:
       permalink: true
   - neoteroi.timeline
+  - neoteroi.cards
+

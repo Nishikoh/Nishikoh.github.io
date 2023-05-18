@@ -4,3 +4,4 @@ mkdocs-git-revision-date-localized-plugin
 mkdocs-blogging-plugin
 mkdocs-exclude
 neoteroi-mkdocs
+mkdocs-macros-plugin
