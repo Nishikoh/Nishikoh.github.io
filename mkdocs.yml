@@ -143,4 +143,5 @@ markdown_extensions:
       permalink: true
   - neoteroi.timeline
   - neoteroi.cards
-
+  - mdx_truly_sane_lists:
+      nested_indent: 2
