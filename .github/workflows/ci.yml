@@ -51,6 +51,7 @@ jobs:
         run: mkdocs build
         env:
           ANALYTICS_PROPERTY: ${{ secrets.ANALYTICS_PROPERTY }}
+          GOOGLE_SITE_VERIFICATION: ${{ secrets.GOOGLE_SITE_VERIFICATION }}
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
