@@ -88,12 +88,17 @@ plugins:
         - "node_modules/*"
         - "**/.git/*"
         - "**/node_modules/*"
+        - "pakcage-lock.json"
+        - "package.json"
+        - "prh.yaml"
         # - "private/*"
   - macros:
       render_by_default: true
       on_error_fail: true
       verbose: true
 
+hooks:
+    - blog/hooks.py
 
 extra:
   social:
