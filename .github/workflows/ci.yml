@@ -47,7 +47,10 @@ jobs:
       - name: delete private
         run: rm -rf blog/private blog/node_modules
 
-      - run: mkdocs build
+      - name: Build
+        run: mkdocs build
+        env:
+          ANALYTICS_PROPERTY: ${{ secrets.ANALYTICS_PROPERTY }}
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
