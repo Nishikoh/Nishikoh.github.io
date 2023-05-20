@@ -88,9 +88,11 @@ plugins:
         - "node_modules/*"
         - "**/.git/*"
         - "**/node_modules/*"
-        - "pakcage-lock.json"
+        - "package-lock.json"
         - "package.json"
         - "prh.yaml"
+        - "hooks.py"
+        - "__pycache__/*"
         # - "private/*"
   - macros:
       render_by_default: true
@@ -109,7 +111,9 @@ extra:
     - icon: fontawesome/brands/linkedin
       link: https://www.linkedin.com/in/koki-nishihara/
   generator: false
-
+  analytics:
+    provider: google
+    property: G-XXXXXXXXXX
   search:
     language: "ja"
 
