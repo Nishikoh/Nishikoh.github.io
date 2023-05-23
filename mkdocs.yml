@@ -3,7 +3,7 @@ site_author: Nishikoh
 site_url: https://nishikoh.github.io/
 site_description: |
   Nishikohの技術ブログです。日々の中で学んだことや気づいたことを書いていきます。
-  PythonやGoogle Cloud Platform(GCP)、MLOpsが中心です。
+  PythonやGoogle Cloud(GCP)、MLOpsの話題が中心です。
 docs_dir: blog
 
 theme:
