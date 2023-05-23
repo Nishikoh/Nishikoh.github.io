@@ -1,7 +1,10 @@
-site_name: Nishikoh.io
+site_name: Nishikoh Tech Blog
 site_author: Nishikoh
-docs_dir: blog
 site_url: https://nishikoh.github.io/
+site_description: |
+  Nishikohの技術ブログです。日々の中で学んだことや気づいたことを書いていきます。
+  PythonやGoogle Cloud Platform(GCP)、MLOpsが中心です。
+docs_dir: blog
 
 theme:
   language: "ja"
@@ -54,6 +57,8 @@ theme:
 
 plugins:
   - monorepo
+  - minify:
+      minify_html: true
   - git-revision-date-localized:
       type: iso_datetime
   - search:
