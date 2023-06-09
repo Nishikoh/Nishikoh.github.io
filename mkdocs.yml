@@ -18,6 +18,7 @@ theme:
     - navigation.instant # blogging paging と併用はできない
     - navigation.top
     - navigation.tracking
+    - navigation.footer
     - toc.follow
 
   palette:
