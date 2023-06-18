@@ -20,6 +20,21 @@ theme:
     - navigation.tracking
     - navigation.footer
     - toc.follow
+  icon:
+    logo: material/cloud-check-variant-outline
+    tag:
+      html: fontawesome/brands/html5
+      js: fontawesome/brands/js
+      css:  fontawesome/brands/css3
+      github: simple/github
+      gha: simple/githubactions
+      python: simple/python
+      gcp: material/google-cloud
+      pytorch: simple/pytorch
+      google: fontawesome/brands/google
+      rust: simple/rust
+      terraform: simple/terraform
+      docker: simple/docker
 
   palette:
     # Palette toggle for light mode
@@ -53,8 +68,7 @@ theme:
   font:
     text: Zen Antique
     code: Roboto Mono
-  icon:
-    logo: logo
+
 
 plugins:
   - monorepo
@@ -122,6 +136,20 @@ extra:
     property: G-XXXXXXXXXX
   search:
     language: "ja"
+  tags:
+    HTML5: html
+    JavaScript: js
+    CSS: css
+    GitHub: github
+    GitHub Actions: gha
+    Python: python
+    Google Cloud: gcp
+    PyTorch: pytorch
+    Google: google
+    Cargo: rust
+    Rust: rust
+    Terraform: terraform
+    Docker: docker
 
 extra_css:
   - https://www.neoteroi.dev/mkdocs-plugins/css/neoteroi.css # https://github.com/Neoteroi/mkdocs-plugins/issues/30
