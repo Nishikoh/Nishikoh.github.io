@@ -7,3 +7,4 @@ neoteroi-mkdocs
 mkdocs-macros-plugin
 mdx_truly_sane_lists
 mkdocs-minify-plugin
+httpx

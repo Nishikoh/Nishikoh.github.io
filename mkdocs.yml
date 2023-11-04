@@ -76,6 +76,13 @@ plugins:
       minify_html: true
   - git-revision-date-localized:
       type: iso_datetime
+      timezone: Asia/Tokyo
+      locale: ja
+      fallback_to_build_date: false
+      enable_creation_date: true
+      enabled: true
+      strict: true
+      # fallback_to_build_date: true
   - search:
       lang:
         - ja
@@ -93,7 +100,7 @@ plugins:
       sort: 
         from: new        # Sort from new to old, default
         # or old         # Sort from old to new
-        by: creation     # Sort by the first commit time, default
+        by: revision     # Sort by the first commit time, default
         # or revision    # Sort by the latest commit time
       full_content: false # Use the full content for blog description
       paging: false # trueにするとnavigation.instantと競合する
