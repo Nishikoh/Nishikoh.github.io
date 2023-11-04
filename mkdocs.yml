@@ -137,6 +137,8 @@ extra:
       link: https://zenn.dev/nishikoh
     - icon: fontawesome/brands/linkedin
       link: https://www.linkedin.com/in/koki-nishihara/
+    - icon: simple/speakerdeck
+      link: https://speakerdeck.com/koki_nishihara
   generator: false
   analytics:
     provider: google
