@@ -40,7 +40,7 @@ theme:
     # Palette toggle for light mode
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: blue grey
+      primary: pink
       toggle:
         icon: material/weather-night
         name: Switch to dark mode
@@ -48,7 +48,7 @@ theme:
     # Palette toggle for dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: blue grey
+      primary: pink
       toggle:
         icon: material/weather-sunny
         name: Switch to light mode
@@ -125,6 +125,7 @@ plugins:
       render_by_default: true
       on_error_fail: true
       verbose: true
+  - markdown-exec
 
 hooks:
     - blog/hooks.py
@@ -159,10 +160,11 @@ extra:
     Rust: rust
     Terraform: terraform
     Docker: docker
+  remote_css:
+    - https://www.neoteroi.dev/mkdocs-plugins/css/neoteroi.css # https://github.com/Neoteroi/mkdocs-plugins/issues/30
 
 extra_css:
-  - https://www.neoteroi.dev/mkdocs-plugins/css/neoteroi.css # https://github.com/Neoteroi/mkdocs-plugins/issues/30
-
+  - stylesheets/neoteroi.css
 # https://squidfunk.github.io/mkdocs-material/reference/
 # https://facelessuser.github.io/pymdown-extensions/extensions/arithmatex/
 markdown_extensions:
