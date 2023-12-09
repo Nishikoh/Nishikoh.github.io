@@ -74,18 +74,6 @@ plugins:
   - group:
       enabled: !ENV [ENABLE]
       plugins:
-        - monorepo
-        - minify:
-            minify_html: true
-        - git-revision-date-localized:
-            type: iso_datetime
-            timezone: Asia/Tokyo
-            locale: ja
-            fallback_to_build_date: false
-            enable_creation_date: true
-            enabled: true
-            strict: true
-            # fallback_to_build_date: true
         - blogging:
             locale: ja
             # GLOBAL CATEGORY: configs for {{ blog_content }}
@@ -104,6 +92,19 @@ plugins:
             show_total: true
             theme:
               name: card
+        - monorepo
+        - minify:
+            minify_html: true
+        - git-revision-date-localized:
+            type: iso_datetime
+            timezone: Asia/Tokyo
+            locale: ja
+            fallback_to_build_date: false
+            enable_creation_date: true
+            enabled: true
+            strict: true
+            fallback_to_build_date: true
+
   - tags:
       tags_file: tags.md
   - search:
