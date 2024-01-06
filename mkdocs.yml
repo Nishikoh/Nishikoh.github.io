@@ -126,10 +126,6 @@ plugins:
         - "hooks.py"
         - "__pycache__/*"
         # - "private/*"
-  - macros:
-      render_by_default: true
-      on_error_fail: true
-      verbose: true
   - markdown-exec
 
 hooks:
