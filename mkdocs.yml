@@ -2,8 +2,8 @@ site_name: Nishikoh Tech Blog
 site_author: Nishikoh
 site_url: https://nishikoh.github.io/
 site_description: |
-  Nishikohの技術ブログです。日々の中で学んだことや気づいたことを書いていきます。
-  PythonやGoogle Cloud(GCP)、MLOpsのトピックが多めです。
+  Nishikohの技術ブログです。
+  PythonやGoogle Cloud(GCP)、MLOpsの備忘録が多めです。
 docs_dir: blog
 
 theme:
