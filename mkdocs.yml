@@ -101,9 +101,9 @@ plugins:
             locale: ja
             fallback_to_build_date: false
             enable_creation_date: true
+            enable_git_follow: false # これを設定しないとcreation_dateがおかしくなる
             enabled: true
             strict: true
-            fallback_to_build_date: true
 
   - tags:
       tags_file: tags.md
