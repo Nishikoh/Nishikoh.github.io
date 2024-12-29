@@ -125,7 +125,7 @@ plugins:
         - "prh.yaml"
         - "hooks.py"
         - "__pycache__/*"
-        # - "private/*"
+        - "private/*"
   - markdown-exec
 
 hooks:
