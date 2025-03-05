@@ -124,6 +124,7 @@ plugins:
         - "package.json"
         - "prh.yaml"
         - "hooks.py"
+        - "devbox*"
         - "__pycache__/*"
         - "private/*"
   - markdown-exec
