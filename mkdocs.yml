@@ -92,7 +92,7 @@ plugins:
             show_total: true
             theme:
               name: card
-        - monorepo
+        # - monorepo # errorが発生するようになった
         - minify:
             minify_html: true
         - git-revision-date-localized:
