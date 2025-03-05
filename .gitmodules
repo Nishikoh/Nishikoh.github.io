@@ -1,4 +1,4 @@
 
 [submodule "blog"]
 	path = blog
-	url = git@github.com:Nishikoh/blog.git
+	url = https://github.com/Nishikoh/blog.git
