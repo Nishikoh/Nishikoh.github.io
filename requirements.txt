@@ -1,7 +1,7 @@
 mkdocs-material
 mkdocs-monorepo-plugin
 mkdocs-git-revision-date-localized-plugin
-mkdocs-blogging-plugin
+subtree/mkdocs-blogging
 mkdocs-exclude
 neoteroi-mkdocs
 mkdocs-macros-plugin
