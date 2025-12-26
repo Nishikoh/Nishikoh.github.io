@@ -94,7 +94,7 @@ class Util:
             if is_first_commit:
                 # diff_filter="A" will select the commit that created the file
                 commit_timestamp = git.log(
-                    realpath, date="short", format="%at", diff_filter="A", follow=True
+                    realpath, date="short", format="%at", diff_filter="A", follow=False
                 )
                 # A file can be created multiple times, through a file renamed. 
                 # Commits are ordered with most recent commit first
