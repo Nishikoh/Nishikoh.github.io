@@ -1,0 +1,44 @@
+name: Feature request
+description: Suggest an idea for this project
+title: "[FEATURE] "
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this request!
+
+  - type: input
+    id: plugin-version
+    attributes:
+      label: Plugin version
+      description: What version of the plugin are you running?
+      placeholder: e.g. v2.2.5
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Is your feature request related to a problem? (optional)
+      description: A clear and concise description of what the problem is.
+      placeholder: I'm always frustrated when ...
+  - type: textarea
+    id: expected
+    attributes:
+      label: What is your suggestion?
+      description: Describe the solution you'd like.
+      placeholder: A clear and concise description of what you want to happen.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Any other idea?
+      description: Describe alternatives you've considered.
+      placeholder: A clear and concise description of any alternative solutions or features you've considered.
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context (optional)
+      description: Add any other context about the problem here.
