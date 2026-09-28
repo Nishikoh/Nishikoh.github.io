@@ -134,6 +134,9 @@ plugins:
         - "devbox*"
         - "__pycache__/*"
         - "private/*"
+        - "docs/*"
+        - "scripts/*"
+        - "review/*"
   - markdown-exec
 
 hooks:
