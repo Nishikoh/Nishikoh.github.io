@@ -14,3 +14,7 @@ gh repo clone Nishikoh/Nishikoh.github.io -- --recurse-submodules
 ```
 git submodule update --init --recursive
 ```
+
+```
+mise exec pinact -- pinact run -u
+```
